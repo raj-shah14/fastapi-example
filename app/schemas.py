@@ -7,6 +7,9 @@ from app.database import Base
 class UserCreate(BaseModel):
     email: EmailStr
     password : str
+    first_name: str
+    last_name: str
+    phone_number: str
 
 class UserOut(BaseModel):
     id: int
